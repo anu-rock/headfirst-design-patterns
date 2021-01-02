@@ -2,7 +2,7 @@
 
 > Favor composition over inheritance.
 
-This program uses **Strategy** pattern.
+This application uses **Strategy** pattern to _delegate_ certain behaviors (varying parts of the application) to composing objects. This type of selective code reuse isn't possible with inheritance.
 
 The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 
