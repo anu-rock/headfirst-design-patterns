@@ -20,10 +20,10 @@ class StatsDisplay implements Observer, DisplayElement {
   }
 
   @override
-  void update(double temperature, double humidity, double pressure) {
-    this._temperature = temperature;
-    this._humidity = humidity;
-    this._pressure = pressure;
+  void update() {
+    this._temperature = this._weatherData.temperature;
+    this._humidity = this._weatherData.humidity;
+    this._pressure = this._weatherData.pressure;
     this.display();
   }
 }

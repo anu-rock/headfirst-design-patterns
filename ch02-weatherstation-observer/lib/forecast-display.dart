@@ -19,9 +19,9 @@ class ForecastDisplay implements Observer, DisplayElement {
   }
 
   @override
-  void update(double temperature, double humidity, double pressure) {
+  void update() {
     this._lastPressure = this._currentPressure;
-    this._currentPressure = pressure;
+    this._currentPressure = this._weatherData.pressure;
     this.display();
   }
 }
