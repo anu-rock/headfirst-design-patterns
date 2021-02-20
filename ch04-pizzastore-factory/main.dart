@@ -1,7 +1,7 @@
-import 'lib/chicago-pizza-store.dart';
-import 'lib/ny-pizza-store.dart';
-import 'lib/pizza-store.dart';
-import 'lib/pizza.dart';
+import 'lib/stores/chicago-pizza-store.dart';
+import 'lib/stores/ny-pizza-store.dart';
+import 'lib/stores/pizza-store.dart';
+import 'lib/pizzas/pizza.dart';
 
 void main(List<String> args) {
   PizzaStore nyStore = NYPizzaStore();

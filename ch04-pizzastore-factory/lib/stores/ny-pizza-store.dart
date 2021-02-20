@@ -1,9 +1,9 @@
-import 'ny-style-cheese-pizza.dart';
-import 'ny-style-clam-pizza.dart';
-import 'ny-style-pepperoni-pizza.dart';
-import 'ny-style-veggie-pizza.dart';
 import 'pizza-store.dart';
-import 'pizza.dart';
+import '../pizzas/ny-style-cheese-pizza.dart';
+import '../pizzas/ny-style-clam-pizza.dart';
+import '../pizzas/ny-style-pepperoni-pizza.dart';
+import '../pizzas/ny-style-veggie-pizza.dart';
+import '../pizzas/pizza.dart';
 
 class NYPizzaStore extends PizzaStore {
   @override

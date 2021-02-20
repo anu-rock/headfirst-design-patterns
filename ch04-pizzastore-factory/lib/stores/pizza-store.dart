@@ -1,4 +1,4 @@
-import 'pizza.dart';
+import '../pizzas/pizza.dart';
 
 abstract class PizzaStore {
   Pizza orderPizza(String type) {
