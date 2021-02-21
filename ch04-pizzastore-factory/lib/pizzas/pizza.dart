@@ -1,29 +1,21 @@
+import '../ingredients/cheeses/cheese.dart';
+import '../ingredients/clams/clams.dart';
+import '../ingredients/doughs/dough.dart';
+import '../ingredients/pepperonis/pepperoni.dart';
+import '../ingredients/sauces/sauce.dart';
+import '../ingredients/veggies/veggie.dart';
+
 abstract class Pizza {
-  String get name {
-    return 'Unknown Pizza';
-  }
+  String name;
 
-  String get dough {
-    return 'Unknown Dough';
-  }
+  Dough dough;
+  Sauce sauce;
+  List<Veggie> veggies;
+  Cheese cheese;
+  Pepperoni pepperoni;
+  Clams clams;
 
-  String get sauce {
-    return 'Unknown Sauce';
-  }
-
-  List<String> get toppings {
-    return List<String>();
-  }
-
-  void prepare() {
-    print('Preparing $name');
-    print('Tossing dough...');
-    print('Adding sauce...');
-    print('Adding toppings...');
-    this.toppings.forEach((topping) {
-      print('   $topping');
-    });
-  }
+  void prepare();
 
   void bake() {
     print('Baking for 25 mins at 300 degs');
